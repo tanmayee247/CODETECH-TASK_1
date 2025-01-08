@@ -1,0 +1,17 @@
+#define pin 13
+
+void setup()
+{
+   pinMode(pin, OUTPUT); 
+   Serial.begin(9600);
+}
+
+void loop()
+{
+    digitalWrite(pin, HIGH);
+    Serial.println("LED ON!");
+    delay(1000);
+    digitalWrite(pin, LOW);
+    Serial.println("LED OFF!");
+    delay(1000);
+}
